@@ -3,7 +3,7 @@ services:
   - docker
 
 before install:
-  - docker build -t anshul/docker-react -f Dockerfile.dev .
+  - docker build -t anshulchanchlani/docker-react -f Dockerfile.dev .
 
 script:
-  -  docker run anshul/docker-react npm run test -- --coverage
+  -  docker run anshulchanchlani/docker-react npm run test -- --coverage
